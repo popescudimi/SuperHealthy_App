@@ -210,31 +210,22 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener,V
             builder.create().show();
         }
     }
-    private void initializeWaterFragmentProgress(){
+    private void initializeWaterFragmentProgress() {
 
-      //  DecimalFormat twoDecimalPlaces = new DecimalFormat(".##");
+        //  DecimalFormat twoDecimalPlaces = new DecimalFormat(".##");
         float amount = preferences.getFloat("amountWater", 0);
-        float current = currentAmountWater.getFloat("waterDailyGoal",0);
-        if (current < 0 )
+        float current = currentAmountWater.getFloat("waterDailyGoal", 0);
+        if (current < 0)
             current = 0;
 
 
-        StringBuilder waterSummary = new StringBuilder().append(String.format(" %.2f", current)).append(" / ").append(String.format(" %.2f",amount)).append(" L");
+        StringBuilder waterSummary = new StringBuilder().append(String.format(" %.2f", current)).append(" / ").append(String.format(" %.2f", amount)).append(" L");
 
         textViewRequiredAmount.setText(waterSummary);
-            if ((double)current / (double)amount >= 0 && (double)current / (double)amount <= 0.25){
-                imageViewWaterSummary.setImageResource(R.drawable.water_icon);
-            }else if ((double)current / (double)amount >= 0.26 && (double)current / (double)amount <= 0.50){
-                imageViewWaterSummary.setImageResource(R.drawable.water_icon);
-            }else if ((double)current / (double)amount >= 0.51 && (double)current / (double)amount <= 0.75){
-                imageViewWaterSummary.setImageResource(R.drawable.water_icon);
-            }else if ((double)current / (double)amount >= 0.76 && (double)current / (double)amount <= 1){
-                imageViewWaterSummary.setImageResource(R.drawable.water_icon);
-            }else {
-                imageViewWaterSummary.setImageResource(R.drawable.water_icon);
-            }
-
+        imageViewWaterSummary.setImageResource(R.drawable.water_icon);
     }
+
+
 
     private void initializeFoodCalorySummary() {
         if (getActivity() != null){

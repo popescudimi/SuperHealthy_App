@@ -106,7 +106,6 @@ public class WaterFragment extends BaseFragment implements View.OnClickListener{
                 putSharedPreferencesData();
                 editTextWaterAmount.setText("");
                 editTextWaterAmount.clearFocus();
-               // setKeyboardVisibility(true);
                 dynamicToastMessage();
                 break;
             case R.id.buttonAdd1L:
@@ -235,16 +234,5 @@ public class WaterFragment extends BaseFragment implements View.OnClickListener{
             }
         }
     }
-
-
-    public void setKeyboardVisibility(boolean show) {
-        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        if(show){
-            imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-        }else{
-            imm.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),0);
-        }
-    }
-
 
         }
