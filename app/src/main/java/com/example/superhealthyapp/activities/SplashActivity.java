@@ -1,9 +1,6 @@
 package com.example.superhealthyapp.activities;
 
-/*
-  Sources : https://stackoverflow.com/questions/5486789/how-do-i-make-a-splash-screen
-            https://medium.com/geekculture/implementing-the-perfect-splash-screen-in-android-295de045a8dc
- */
+
 
 import android.content.Intent;
 import android.os.Bundle;

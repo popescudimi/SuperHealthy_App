@@ -20,6 +20,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.superhealthyapp.R;
 
+import com.example.superhealthyapp.activities.MainActivity;
 import com.example.superhealthyapp.fragments.BaseFragment;
 import com.squareup.picasso.Picasso;
 
@@ -36,7 +37,7 @@ public class FoodDetailFragment extends BaseFragment implements View.OnClickList
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.food_second,container,false);
         if (getActivity() != null){
-        //    ((MainActivity)getActivity()).updateToolbarTitle(getString(R.string.food_fragment));
+            ((MainActivity)getActivity()).updateToolbarTitle(getString(R.string.food_fragment));
         }
         return view;
     }

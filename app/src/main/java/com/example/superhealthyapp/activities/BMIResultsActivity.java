@@ -27,7 +27,6 @@ public class BMIResultsActivity extends BaseActivity implements View.OnClickList
 
     private TextView textViewBMIIndex, textViewBMIResult, textViewRequiredAmount, textViewBMITips;
     private NumberPicker numberPickerWeight, numberPickerHeight;
-    private DecimalFormat TWO_DECIMAL_PLACES = new DecimalFormat(".##");
     private Button buttonProceed;
     private ViewGroup transition;
     String bmiResult;
@@ -94,7 +93,6 @@ public class BMIResultsActivity extends BaseActivity implements View.OnClickList
             TransitionManager.beginDelayedTransition(transition);
         }
         buttonProceed.setVisibility(View.VISIBLE);
-        //textViewCurrentTime.setVisibility(View.GONE);
     }
 
 
@@ -163,6 +161,5 @@ public class BMIResultsActivity extends BaseActivity implements View.OnClickList
         textViewBMIResult.setText(bmiResult);
         textViewBMIIndex.setText(bmiIndex);
         textViewRequiredAmount.setText(requiredAmountText);
-        //   bmiCategory.setText(category);
     }
 }

@@ -1,7 +1,5 @@
 package com.example.superhealthyapp.activities;
-/**
- Please note source : https://www.androidhive.info/2016/05/android-build-intro-slider-app/
- */
+
 
 
 import android.content.Intent;

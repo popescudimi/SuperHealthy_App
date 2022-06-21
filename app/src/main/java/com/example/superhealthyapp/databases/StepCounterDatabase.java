@@ -1,10 +1,6 @@
 package com.example.superhealthyapp.databases;
 
-/**
- Sources used below
- 1) https://www.programmersought.net/article/329313409.html
- 2) https://github.com/pubnative/easy-steps-android/blob/master/app/src/main/java/net/pubnative/easysteps/Database.java
- */
+
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -3,7 +3,6 @@ package com.example.superhealthyapp.activities;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-// <!--https://www.androidhive.info/2016/05/android-build-intro-slider-app/!-->
 
 public class PrefManager {
     private SharedPreferences pref;

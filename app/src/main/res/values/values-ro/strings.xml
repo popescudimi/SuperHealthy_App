@@ -1,0 +1,145 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools" tools:locale="ro">
+
+
+    <array name="tab_name">
+        <item>Acasa</item>
+        <item>Mancare</item>
+        <item>Apa</item>
+        <item>Amintire</item>
+        <item>Pedometru</item>
+    </array>
+
+    <string-array name="tips_array">
+    <item>You are severely underweight. It is a sign that you\'re not eating enough or you may be ill.</item>
+    <item>You are underweight So you may need to put on some weight. </item>
+    <item>You are at a healthy weight for your height. You lower your risk of developing serious health problems.</item>
+    <item>You are slightly overweight. You may be advised to lose some weight for health reasons.</item>
+    <item>You are heavily overweight. Your health may be at risk if you do not lose weight.</item>
+    </string-array>
+
+    <string name="next">Urmatorul</string>
+    <string name="skip">Sari</string>
+    <string name="start">Start</string>
+
+
+    <string name="app_name">Super Healthy App</string>
+    <string name="slide_1_title">Bine ai venit!</string>
+    <string name="slide_1_desc">Super Healthy te ajuta sa mentii un stil de viata sanatos si ordonat</string>
+
+    <string name="slide_2_title">Calorii / Apa </string>
+    <string name="slide_2_desc">Numarul de calorii si volumul de apa pe care il consumi zilnic</string>
+
+    <string name="slide_3_title">Pedometru</string>
+    <string name="slide_3_desc">Numarul de pasi pe care trebuie sa ii faci zilnic</string>
+    <string name="slide_4_title">Amintire </string>
+    <string name="slide_4_desc">Programeaza lucruri importante</string>
+
+    <string name="grams">Grame: 100</string>
+    <string name="goal"> Goal  </string>
+    <string name="home_fragment">Acasa</string>
+    <string name="reminder_fragment">Amintire </string>
+    <string name="food_fragment">Mancare </string>
+    <string name="water_fragment">Apa </string>
+    <string name="out_of_range">Te rog introdu o valoare valida</string>
+
+    <string name="bmi_type_error">Va rog introduceti</string>
+    <string name="bmi_input_request">Introduceti </string>
+    <string name="welcome_text">Bine ai venit!</string>
+    <string name="profile_home">Acasa</string>
+    <string name="content_show_bmi">Rezultatul BMI este</string>
+    <string name="default_show_bmi">BMI :</string>
+    <string name="content_show_result">Arata rezultate</string>
+    <string name="default_show_result">Rezultate :</string>
+    <string name="text_label_kg">Kg</string>
+    <string name="text_label_m">CM</string>
+    <string name="text_button_calculate">Calculeaza</string>
+    <string name="weight">Greutate</string>
+    <string name="Height">Inaltime</string>
+    <string name="title_home">Acasa</string>
+    <string name="title_reminder">Amintire</string>
+    <string name="title_food">Mancare</string>
+    <string name="title_water">Apa</string>
+    <string name="text_button_proceed">Mergi mai departe</string>
+    <string name="required_amount_of_water">Valoarea de apa de consum recomandata</string>
+    <string name="liter">Litri</string>
+    <string name="goal_reached_notification">Tinta atinsa!</string>
+    <string name="notification_text">%s pasi de facut</string>
+    <string name="notification_title">Senzorul numara</string>
+    <string name="your_progress_will_be_shown_here_soon">Progresul tau va fi afisat aici</string>
+    <string name="record">Record</string>
+    <string name="total_last_7_days">Total ultimele 7 zile</string>
+    <string name="average_last_7_days">Medie ultimele 7 zile</string>
+    <string name="reminder_title">Titlu</string>
+    <string name="reminder_text">Mesaj alarma</string>
+    <string name="reminder_amount">Frecventa alarma</string>
+    <string name="set_alarm">Seteaza alarma</string>
+    <string name="set_reminder">Seteaza reminder</string>
+    <string name="utc">00:00 UTC</string>
+    <string name="choose_notify">Trimite notificare</string>
+    <string name="not_set">Nu este setat</string>
+    <string name="time_format">HH:mm</string>
+    <string name="dateFormat">dd/MM/yyyy</string>
+    <string name="pick_hour">Alege ora</string>
+    <string name="delete">Sterge</string>
+    <string name="edit">Editeaza</string>
+    <string name="negative">NU</string>
+    <string name="positive">DA</string>
+    <string name="selected_value_removed">Alarma a fost stearsa</string>
+    <string name="message">Mesaj</string>
+    <string name="dateTime_text">Data</string>
+    <string name="alert_type">Tip alerta</string>
+    <string name="notification">Notificare</string>
+    <string name="alert">Alarma</string>
+    <string name="are_you_sure_want_to_delete">Sunteti sigur ca vreti sa stergeti?</string>
+    <string name="warning">Avertizare</string>
+    <string name="pick_target">Alegeti valoarea dorita</string>
+    <string name="title_pedometer">Pedometru</string>
+    <string name="ten_thousand">10.000</string>
+    <string name="steps">Pasi</string>
+    <string name="average">Medie</string>
+    <string name="total">Total</string>
+    <string name="_50">50</string>
+    <string name="_500">500</string>
+    <string name="value_time_format">%02d:%02d:%02d</string>
+    <string name="no_sensor">Senzorul nu a putut fi gasit</string>
+    <string name="no_sensor_explain">Nu este niciun senzor pentru acest device</string>
+    <string name="highest">Cel mai mult</string>
+    <string name="weekly_total">Total saptamanal</string>
+    <string name="weekly_average">Medie saptamanala </string>
+    <string name="monthly_total">Total lunar</string>
+    <string name="monthly_average">Medie lunara</string>
+    <string name="ok">Ok</string>
+    <string name="daily_target_completed">Target completat</string>
+    <string name="language_preferences">Limba preferata</string>
+    <string name="calories">Calorii: </string>
+    <string name="water">Apa</string>
+    <string name="reminder">Amintire</string>
+    <string name="total_steps">Numar total pasi</string>
+    <string name="total_calories">Numar total calorii</string>
+    <string name="romanian">Romana</string>
+    <string name="english">English</string>
+    <string name="pick_language">Alege limba</string>
+    <string name="cancel">Anuleaza</string>
+    <string name="editing_complete">Editarea a fost completata</string>
+    <string name="alarm_has_been_set">Alarma a fost setata</string>
+    <string name="about">Despre</string>
+    <string name="add_value">Adauga apa (mL)</string>
+    <string name="_250ml">250mL</string>
+    <string name="_330ml">330mL</string>
+    <string name="_500ml">500mL</string>
+    <string name="_1l">1L</string>
+    <string name="amount_has_been_removed">Valoarea a fost stearsa</string>
+    <string name="target">Tinta</string>
+    <string name="clean">Sterge</string>
+    <string name="sure_to_clean">Esti sigur ca vrei sa stergi? </string>
+    <string name="search">Cauta :</string>
+    <string name="add">Adauga</string>
+    <string name="food_added_calory">Valoarea specificata a fost adaugata</string>
+    <string name="add_calory">Adauga calorii</string>
+    <string name="restart_device">Pentru finalizarea schimbarii, schimba un tab</string>
+    <string name="water_amount_added">Valoarea dorita de apa a fost adaugata</string>
+
+
+
+</resources>

@@ -4,35 +4,39 @@
     package="com.example.superhealthyapp">
 
 
+    <uses-sdk android:targetSdkVersion="26"/>
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true"/>
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" android:maxSdkVersion="26"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SET_ALARM"/>
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
 
-    <supports-screens
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:xlargeScreens="true"
-        android:smallScreens="true"/>
+
 
     <application
-        android:windowSoftInputMode="adjustPan"
-        android:name="com.example.superhealthyapp.activities.App"
-        android:configChanges="locale|orientation"
-        android:fullBackupContent="true"
+        android:allowBackup="true"
         android:icon="@drawable/superhealthy"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:replace="label"
+        android:name="com.example.superhealthyapp.activities.App">
+
 
         <activity
-            android:name="com.example.superhealthyapp.activities.SplashActivity"
+            android:name=".activities.SplashActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan|stateHidden"
-            tools:ignore="InnerclassSeparator">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,17 +44,36 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.superhealthyapp.activities.MainActivity"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="InnerclassSeparator" />
-        <activity android:name="com.example.superhealthyapp.activities.BMIResultsActivity" tools:ignore="InnerclassSeparator" />
-        <activity android:name="com.example.superhealthyapp.managers.AlertManager" android:theme="@android:style/Animation.Dialog" tools:ignore="InnerclassSeparator"> </activity>
-        <activity android:name="com.example.superhealthyapp.activities.BaseActivity" tools:ignore="InnerclassSeparator" />
-        <activity android:name="com.example.superhealthyapp.activities.WelcomeActivity" tools:ignore="InnerclassSeparator" />
-        <receiver android:name="com.example.superhealthyapp.managers.NotificationReceiverManager" android:exported="false" android:enabled="true" tools:ignore="InnerclassSeparator"/>
-        <receiver android:name="com.example.superhealthyapp.managers.AlertReceiverManager" android:exported="false" android:enabled="true" tools:ignore="InnerclassSeparator" />
+        <activity android:name="com.example.superhealthyapp.activities.MainActivity" />
+        <activity android:name="com.example.superhealthyapp.activities.BMIResultsActivity" />
+        <activity android:name="com.example.superhealthyapp.managers.AlertManager"  />
+        <activity android:name="com.example.superhealthyapp.activities.BaseActivity" />
+        <activity android:name="com.example.superhealthyapp.activities.WelcomeActivity"/>
+
+        <receiver android:name="com.example.superhealthyapp.managers.NotificationReceiverManager" />
+        <receiver android:name="com.example.superhealthyapp.managers.AlertReceiverManager" />
 
 
+        <service
+            android:name=".fragments.Pedometer.SensorListener"/>
+
+        <service
+            android:name=".fragments.Pedometer.WidgetUpdateService"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="2"/>
+            <meta-data
+                android:name="worldReadable"
+                android:value="true"/>
+            <meta-data
+                android:name="description"
+                android:value="Displays the steps taken today"/>
+        </service>
 
     </application>
 </manifest>

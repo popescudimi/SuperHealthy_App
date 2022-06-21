@@ -103,12 +103,6 @@ public class MainActivity extends BaseActivity implements
         Drawable boxNotSelected, boxIsSelected;
         boxNotSelected = ContextCompat.getDrawable(context, box);
         boxIsSelected = ContextCompat.getDrawable(context, pressed);
-
-        /*
-        Bitmap NotSelected_bitmap = ((BitmapDrawable)boxNotSelected).getBitmap();
-        Bitmap isSelected_bitmp = drawableToBitmap(boxIsSelected);
-        */
-
         StateListDrawable drawable = new StateListDrawable();
         drawable.addState(new int[]{android.R.attr.state_selected},
                 boxIsSelected);
@@ -141,8 +135,6 @@ public class MainActivity extends BaseActivity implements
         ImageView icon =  view.findViewById(R.id.tab_icon);
         icon.setImageDrawable(toolBarPressed(tabIconsSelected[position], tabIconsSelected[position], MainActivity.this));
 
-    //    icon.setImageDrawable(Utils.setDrawableSelector(MainActivity.this,
-       //         tabIconsSelected[position], tabIconsSelected[position]));
         return view;
     }
 

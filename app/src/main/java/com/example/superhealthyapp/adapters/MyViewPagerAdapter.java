@@ -1,8 +1,6 @@
 package com.example.superhealthyapp.adapters;
 
-/*
-Source: https://www.androidhive.info/2016/05/android-build-intro-slider-app/
- */
+
 
 import android.content.Context;
 import android.view.LayoutInflater;
