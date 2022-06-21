@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- https://www.androidhive.info/2016/05/android-build-intro-slider-app/ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="285dp"
+            android:layout_height="314dp"
+            android:src="@drawable/kcal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/slide_2_title"
+
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:text="@string/slide_2_desc"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
