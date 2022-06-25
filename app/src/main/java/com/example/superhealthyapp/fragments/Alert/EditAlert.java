@@ -39,7 +39,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class EditReminderFragment extends BaseFragment implements View.OnClickListener {
+public class EditAlert extends BaseFragment implements View.OnClickListener {
 
     private ViewGroup transitionsContainer;
     private SQLiteDatabase sqLiteDatabase;
@@ -183,8 +183,8 @@ public class EditReminderFragment extends BaseFragment implements View.OnClickLi
                 }
                 sqLiteDatabase.update(ReminderDatabase.TABLE_NAME, cv, ReminderDatabase.KEY_ID+ "=" + id, null);
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                ReminderFragment reminderFragment = new ReminderFragment();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, reminderFragment)
+                AlertFragment alertFragment = new AlertFragment();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, alertFragment)
                       .commit();
                 Toast.makeText(getContext(),getString(R.string.editing_complete),Toast.LENGTH_LONG).show();
             }

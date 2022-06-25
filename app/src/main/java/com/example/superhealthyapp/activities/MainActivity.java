@@ -21,7 +21,7 @@ import android.content.Context;
 import com.example.superhealthyapp.fragments.Food.FoodFragment;
 import com.example.superhealthyapp.fragments.Home.HomeFragment;
 import com.example.superhealthyapp.fragments.Pedometer.PedometerFragment;
-import com.example.superhealthyapp.fragments.Alert.ReminderFragment;
+import com.example.superhealthyapp.fragments.Alert.AlertFragment;
 import com.example.superhealthyapp.fragments.Water.WaterFragment;
 import com.example.superhealthyapp.R;
 import com.google.android.material.tabs.TabLayout;
@@ -171,7 +171,7 @@ public class MainActivity extends BaseActivity implements
             case FragNavController.TAB4:
                 return new PedometerFragment();
             case FragNavController.TAB5:
-                return new ReminderFragment();
+                return new AlertFragment();
 
         }
         throw new IllegalStateException("Need to send an index that we know");

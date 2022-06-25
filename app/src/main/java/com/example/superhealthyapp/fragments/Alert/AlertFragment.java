@@ -25,7 +25,7 @@ import com.example.superhealthyapp.activities.MainActivity;
 import com.example.superhealthyapp.fragments.BaseFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class ReminderFragment extends BaseFragment implements View.OnClickListener{
+public class AlertFragment extends BaseFragment implements View.OnClickListener{
     private int fragCount;
     private ListView listView;
     private SQLiteDatabase sqLiteDatabase;
@@ -65,7 +65,7 @@ public class ReminderFragment extends BaseFragment implements View.OnClickListen
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(getActivity() != null) {
-                    Fragment fragment = new ReminderDetailFragment();
+                    Fragment fragment = new AlertDetail();
                     FragmentManager fm = getActivity().getSupportFragmentManager();
                     FragmentTransaction transaction = fm.beginTransaction();
                     transaction.replace(R.id.content_frame, fragment);
@@ -87,7 +87,7 @@ public class ReminderFragment extends BaseFragment implements View.OnClickListen
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.fab) {
-            Fragment fragment = new AddReminderFragment();
+            Fragment fragment = new AddAlert();
             if(getActivity()!=null) {
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = fm.beginTransaction();

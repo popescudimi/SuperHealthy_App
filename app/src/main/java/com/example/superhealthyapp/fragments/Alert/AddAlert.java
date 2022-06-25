@@ -38,7 +38,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class AddReminderFragment extends BaseFragment implements View.OnClickListener{
+public class AddAlert extends BaseFragment implements View.OnClickListener{
 
     private SQLiteDatabase sqLite;
     private EditText edtTitle,edtText;
@@ -148,8 +148,8 @@ public class AddReminderFragment extends BaseFragment implements View.OnClickLis
             }
             sqLite.insert(ReminderDatabase.TABLE_NAME, null, cv);
             FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-            ReminderFragment reminderFragment = new ReminderFragment();
-            fragmentManager.beginTransaction().replace(R.id.content_frame, reminderFragment)
+            AlertFragment alertFragment = new AlertFragment();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, alertFragment)
                     .addToBackStack(null).commit();
             Toast.makeText(getContext(),(getString(R.string.alarm_has_been_set)),Toast.LENGTH_LONG).show();
         }

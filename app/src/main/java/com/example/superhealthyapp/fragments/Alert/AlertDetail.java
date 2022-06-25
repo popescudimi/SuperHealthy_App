@@ -23,7 +23,7 @@ import com.example.superhealthyapp.R;
 import com.example.superhealthyapp.activities.MainActivity;
 import com.example.superhealthyapp.fragments.BaseFragment;
 
-public class ReminderDetailFragment extends BaseFragment implements View.OnClickListener {
+public class AlertDetail extends BaseFragment implements View.OnClickListener {
 
     private SQLiteDatabase sqLiteDatabase;
 
@@ -122,8 +122,8 @@ public class ReminderDetailFragment extends BaseFragment implements View.OnClick
     private void switchPreviousPage(){
         if(getActivity() != null) {
             FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-            ReminderFragment reminderFragment = new ReminderFragment();
-            fragmentManager.beginTransaction().replace(R.id.content_frame, reminderFragment).commit();
+            AlertFragment alertFragment = new AlertFragment();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, alertFragment).commit();
         }
     }
 
@@ -132,7 +132,7 @@ public class ReminderDetailFragment extends BaseFragment implements View.OnClick
             if (getActivity().getIntent().getExtras() != null) {
                 long id = getActivity().getIntent().getExtras().getLong("rowId");
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                Fragment fragment = new EditReminderFragment();
+                Fragment fragment = new EditAlert();
                 getActivity().getIntent().putExtra("rowId", id);
                 fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).commit();
             }
