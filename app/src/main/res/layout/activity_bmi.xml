@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:background="@drawable/bmi_calculator_animation_list"
+    android:background="@drawable/bmi_calculator_animation"
     android:id="@+id/layout_bmi_calculator"
     android:gravity="center"
     android:orientation="vertical"

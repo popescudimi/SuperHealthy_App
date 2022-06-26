@@ -28,7 +28,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@drawable/bottom_shadow" />
+        android:background="@color/bg_screen1" />
 
     <FrameLayout
         android:id="@+id/content_frame"
@@ -42,7 +42,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@drawable/bottom_shadow" />
+        android:background="@color/bg_screen1" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/bottom_tab_layout"
