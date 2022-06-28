@@ -49,9 +49,7 @@ public class PedometerFragment extends BaseFragment
     private TextView textViewAverageSteps;
     private PieModel sliceGoal, sliceCurrent;
     private PieChart pieChart;
-    private static final int MINIMUM_PICKER_VALUE = 1000;
-    private static final int MAXIMUM_PICKER_VALUE = 1000;
-    private static final int DEFAULT_GOAL = 500;
+    private static final int DEFAULT_GOAL = 1000;
     private int todayOffset, total_start, goal, since_boot, total_days;
     @SuppressLint("ConstantLocale")
     public final static NumberFormat formatter = NumberFormat.getInstance(Locale.getDefault());
